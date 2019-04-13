@@ -1,65 +1,269 @@
 <!DOCTYPE html>
 
+<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+
+<style>
+
+td {
+	background: darkgray;
+}
+
+#menu {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	background: lightgray;
+}
+
+#item {
+	font-size: 24px;
+	font-style: oblique;
+	font-weight: bold;
+
+}
+
+#desc {
+	font-size: 18px;
+}
+
+</style>
+
 <html>
 
-	<head>
-		<title>Test's Restaurant</title>
-	</head>
+	<title>Test's Restaurant</title>
 	
 	<body>
-		<header>
+		<header style="font-family: 'MyWebFont', Fallback, sans-serif;">
+			<hr />
 			<h1>Test's Restaurant</h1>
 			<hr />
-			
 		</header>
 		
 		<nav>
-			<a href="Main.html">Home</a>
-			<a href="Menu.html">Menu</a>
-			<a href="Contact.html">Contact Us</a>
-			<hr />
+			<ul>
+				<li><a href="Main.html" title="Home">Home</a></li>
+				<li><a href="Menu.html" title="Menu">Menu</a></li>
+				<li><a href="Contact.html" title="Contact Us">Contact Us</a></li>
+			</ul>
 		</nav>
 			
 		<section>
 			<article>
-				<table width="90%" style="margin-left:auto;margin-right:auto;text-align:center;">
+			
+				<table id="menu">
 					<tr>
 						<td>
-							<h3>Food 1</h3>
-							<p>Tasty food</p>
+							<p id="item">Burger and Fries</p>
+							<p id="desc">
+								An American classic! <br />
+								Your choice - with or without cheese <br />
+								Pickle, onion, tomato, and lettuce <br />
+								Served with our famous thick-cut french fries <br />
+								<br />
+								8 <br />
+							</p>
 						</td>
 						
 						<td>
-							<h3>Food 2</h3>
-							<p>Yummy Food</p>
+							<p id="item">Hot Dog and Chips</p>
+							<p id="desc">
+								A summer classic! <br />
+								Your choice - white or wheat bun <br />
+								Relish, mustard, and ketchup <br />
+								Served with our house-made chips <br />
+								<br />
+								8 <br />
+							</p>
 						</td>
 						
 						<td>
-							<h3>Food 3</h3>
-							<p>Filling Food</p>
+							<p id="item">Italian Sausage and Peppers</p>
+							<p id="desc">
+								An all-time favorite! <br />
+								Your choice - mild or spicy Cole Slaw <br />
+								Served with garlic mashers <br />
+								<br />
+								11 <br />
+							</p>
 						</td>
 					</tr>
 					
 					<tr>
 						<td>
-							<h3>Food 4</h3>
-							<p>Spicy Food</p>
+							<p id="item">Tenderloin Sandwich and Chips</p>
+							<p id="desc">
+								Really hits the spot! <br />
+								Plain or sesame seed bun, pickle, onion, tomato, and lettuce <br />
+								Served with our house-made chips <br />
+								<br />
+								9 <br />
+							</p>
 						</td>
 						
 						<td>
-							<h3>Food 5</h3>
-							<p>Sweet Food</p>
+							<p id="item">House Salad</p>
+							<p id="desc">
+								On the lighter side! <br />
+								Your choice - with or without cheese <br />
+								Iceburg lettuc, tomatoes, peppers <br />
+								Thousand Island or Ranch dressing <br />
+								Served with a dinner roll <br />
+								<br />
+								7<br />
+							</p>
 						</td>
 						
 						<td>
-							<h3>Food 6</h3>
-							<p>Salty Food</p>
+							<p id="item">Brisket Sandwich and Fries</p>
+							<p id="desc">
+								Taste of the Lone Star! <br />
+								Smoked Brisket on thick-cut Texas Toast <br />
+								Your choice - mild or spicy Cole Slaw <br />
+								Served with our famous thick-cut french fries <br />
+								<br />
+								9 <br />
+							</p>
 						</td>
 					</tr>
 					
 				</table>
+
+			</article>
+			
+			<hr />
+			<hr />
+			
+			<article>
+				<table id="menu">
+					<tr>
+						<td colspan="2" id="item">
+							Non-alcoholic Beverages
+						</td>
+						
+						<td colspan="2" id="item">
+							Beer
+						</td>
+						
+						<td colspan="2" id="item">
+							Wine
+						</td>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							Root Beer
+						</td>
+						
+						<td>
+							3
+						</td>
+						
+						<td>
+							Import Stout
+						</td>
+						
+						<td>
+							8
+						</td>
+						
+						<td>
+							Blanc
+						</td>
+						
+						<td>
+							3
+						</td>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							Filtered Water
+						</td>
+						
+						<td>
+							2
+						</td>
+						
+						<td>
+							Import Lager
+						</td>
+						
+						<td>
+							8
+						</td>
+						
+						<td>
+							Red
+						</td>
+						
+						<td>
+							2
+						</td>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							Lemondade
+						</td>
+						
+						<td>
+							2
+						</td>
+						
+						<td>
+							House Lager
+						</td>
+						
+						<td>
+							6
+						</td>
+						
+						<td>
+							Lemondade
+						</td>
+						
+						<td>
+							2
+						</td>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							Iced Tea
+						</td>
+						
+						<td>
+							2
+						</td>
+						
+						<td>
+							House IPA
+						</td>
+						
+						<td>
+							6
+						</td>
+						
+						<td>
+							Iced Tea
+						</td>
+						
+						<td>
+							2
+						</td>
+						
+					</tr>
+				</table>
 				
 			</article>
+			
+			<hr />
+			<hr />
 			
 		</section>
 		
@@ -67,7 +271,7 @@
 			<hr />
 			<p>Street, City, State, Zipcode</p>
 			<p>Phone number<p>
-			
+			<hr />
 		</footer>
 			
 	</body>

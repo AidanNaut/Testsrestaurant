@@ -1,0 +1,88 @@
+@font-face {
+	font-family: 'MyWebFont';
+	src: url('myfont.woff2') format('woff2'),
+		 url('myfont.woff') format('woff');
+}
+
+html {
+	background-color: gray;
+}
+
+header, footer, hr {
+	background-color: darkred;
+	color: white;
+	text-align: center;
+	border: 0;
+}
+
+
+/* one solution I tried to beautify my links.
+.grid-container {
+	display: grid;
+	grid: 100px / auto auto auto;
+	grid-gap: 0px;
+	padding: 10px;
+	border: 10px;
+	margin: 10px;
+}
+*
+.grid-container > a {
+	font-size: 24px;
+	margin-left: auto;
+	margin-right: auto;
+}
+*/
+
+
+/* the following code was mostly pulled from this overflow question:
+https://stackoverflow.com/questions/556153/inline-elements-shifting-when-made-bold-on-hover
+I'm still not sure why it works... */
+
+nav {
+	background-color: darkred;
+}
+
+ul {
+	padding: 10px;
+	text-align: center;
+}
+
+li {
+	display: inline-block;
+	font-size: 0px;
+}
+
+li, a {
+	display: inline-block;
+	text-align: center;
+	font-size: 24px;
+}
+
+a {
+	color: white;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+a:hover {
+	font-weight: bold;
+}
+
+a::after {
+	display: block;
+	content: attr(title);
+	font-weight: bold;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+a:visited {
+	color: green;
+}
+
+#text {
+	text-align: center;
+}

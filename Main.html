@@ -1,44 +1,33 @@
 <!DOCTYPE html>
 
+<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+<title>Test's Restaurant</title>
+
 <style>
-#image{
-	display: block;
-	border: 1px solid black;
-	margin: 10px;	 
-	margin-right: auto; 
-	margin-left: auto;
-
-}
-#text{
-	text-align:center;
-	
-}
-
+		
 </style>
 
 <html>
-
-	<head>
-		<title>Test's Restaurant</title>
-	</head>
 	
 	<body>
 		<main>
-		<header id="text">
+		<header id="text" style="font-family: 'MyWebFont', Fallback, sans-serif;">
+			<hr />
 			<h1> Test's Restaurant</h1>
 			<hr />
 		</header>
 		
 		<nav>
-			<a href="Main.html">Home</a>
-			<a href="Menu.html">Menu</a>
-			<a href="Contact.html">Contact Us</a>
-			<hr />
+			<ul>
+				<li><a href="Main.html" title="Home">Home</a></li>
+				<li><a href="Menu.html" title="Menu">Menu</a></li>
+				<li><a href="Contact.html" title="Contact Us">Contact Us</a></li>
+			</ul>
 		</nav>
 			
 		<section>
 			<article id="text">
-				<img src="kitten.jpg" id="image"/>
+				<img src="kitten.jpg" style="display: block; border: 1px solid black; margin: 10px; margin-right: auto; margin-left: auto;" />
 				Welcome to our restaurant
 			</article>
 			
@@ -51,6 +40,7 @@
 			<hr />
 			<p>Street, City, State, Zipcode</p>
 			<p>Phone number<p>
+			<hr />
 		</footer>
 			
 		</main>
