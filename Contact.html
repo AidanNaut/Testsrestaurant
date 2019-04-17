@@ -15,6 +15,38 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+<script>
+
+	function validateForm() {
+		var x = document.forms["inquiryForm"]["nameInput"];
+		var y = document.forms["inquiryForm"]["emailInput"];
+		var z = document.forms["inquiryForm"]["phonenumber"];
+		var a = document.forms["inquiryForm"]["inquiry"];
+		var b = document.forms["inquiryForm"]["attend"];
+		var c = document.forms["inquiryForm"]["daysavail"];
+		
+		if (x.value == "") {
+			window.alert("Name must be filled out");
+			name.focus();
+			return false;
+		}
+		if  (y.value == "") {
+			window.alert("Email must be filled out");
+			name.focus();
+			return false;
+		}
+		if  (z.value == "") {
+			window.alert("Phone number must be filled out");
+			name.focus();
+			return false;
+		}
+		
+		window.alert("Thank you for your submission, we will contact you shortly.");
+		return true;
+	}
+
+</script>
+
 
 <style>
 
@@ -35,35 +67,110 @@ form {
 		</div>
 		
 		<nav>
-			<ul class="nav nav-tabs">
+			<ul class="nav nav-tabs justify-content-center">
 				<li class="nav-item"><a class="nav-link" href="Main.html" title="Home">Home</a></li>
 				<li class="nav-item"><a class="nav-link" href="Menu.html" title="Menu">Menu</a></li>
 				<li class="nav-item"><a class="nav-link active" href="Contact.html" title="Contact Us">Contact Us</a></li>
 			</ul>
 		</nav>
 			
-		<section style="margin-left:auto;margin-right:auto;text-align:center;">
-			<form action="contact.html" method="POST">
-				Name: <input type="text" name="username"><br />
-				Email: <input type="text" name="email"><br />
-				Phone Number: <input type="text" name="phonenumber"><br />
-				Reason for Inquiry: <select>
-					<option value="catering">Catering</option>
-					<option value="private">Private Party</option>
-					<option value="fback">Feedback</option>
-					<option value="other">Other</option>
-				</select><br />
-				Additional Info: <textarea name="addinfo"></textarea><br />
-				Have you been to the restaurant? 
-					<input type="radio" name="attend" value="yes">Yes</input>
-					<input type="radio" name="attend" value="no">No</input><br />
-				Best days to contact you: 
-				<input type="checkbox" name="daysavail" value="Mon">M</input>
-				<input type="checkbox" name="daysavail" value="Tues">T</input>
-				<input type="checkbox" name="daysavail" value="Wed">W</input>
-				<input type="checkbox" name="daysavail" value="Thur">Th</input>
-				<input type="checkbox" name="daysavail" value="Fri">F</input><br />
-				<input type="submit" name="submit" value="Send Request"></input>
+		<section style="margin-left: 100px; margin-right: 100px;text-align: center;" >
+			<form name="inquiryForm" action="#" onsubmit="return validateForm()" method="POST">
+			
+				<div class="form-group">
+					<h3><label for="nameInput">Name:</label> </h3>
+					<input type="text" class="form-control" name="nameInput" placeholder="Enter name."><br />
+				</div>
+				
+				<div class="form-group">
+					<h3><label for="emailInput">Email:</label> </h3>
+					<input type="email" class="form-control" name="emailInput" placeholder="Enter email."><br />
+				</div>
+				
+				<div class="form-group">
+					<h3><label for="phonenumber">Phone Number:</label> </h3>
+					<input type="text" class="form-control" name="phonenumber" placeholder="Enter phone number."><br />
+				</div>
+				
+				<div class="form-group">
+					<h3><label for="inquiry">Reason for Inquiry:</label> </h3>
+					<select class="form-control" name="inquiry">
+						<option value="catering">Catering</option>
+						<option value="private">Private Party</option>
+						<option value="fback">Feedback</option>
+						<option value="other">Other</option>
+					</select><br />
+				</div>
+				
+				<div class="form-group">
+					<h3><label for="addInfo">Additional Info:</label> </h3>
+						<textarea class="form-control" name="addInfo" rows="3"></textarea><br />
+				</div>
+				<div class="form-group">
+					<h3><label for="radioYN">Have you been to the restaurant?</label> </h3>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="attend" id="radioYN" value="yes">
+						<label class="form-check-label" for="radioYN">
+							Yes
+						</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="attend" id="radioYN" value="no">
+						<label class="form-check-label" for="radioYN">
+							No
+						</label>
+					</div>
+				</div>
+				<div class="form-group">
+					<h3><label for="daysAvail">Best days to contact you: </label></h3>
+					<div class="row justify-content-center">
+						<div class="col-md-2">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="daysavail" value="Mon">
+								<label class="form-check-label" for="daysAvail">
+									Monday
+								</label>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="daysavail" value="Tues">
+								<label class="form-check-label" for="daysAvail">
+									Tuesday
+								</label>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="daysavail" value="Wed">
+								<label class="form-check-label" for="daysAvail">
+									Wednesday
+								</label>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="daysavail" value="Thur">
+								<label class="form-check-label" for="daysAvail">
+									Thursday
+								</label>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="daysavail" value="Fri">
+								<label class="form-check-label" for="daysAvail">
+									Friday
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<input type="submit" name="submit" value="Send Request"></input>	
+				</div>	
+					
 			</form>
 		</section>
 		
