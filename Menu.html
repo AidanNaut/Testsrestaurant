@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 
-<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+<title>Test's Restaurant</title>
+
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="restaurantStyles.css" type="text/css" />
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 
 <style>
 
@@ -26,7 +40,6 @@ td {
 #desc {
 	font-size: 18px;
 }
-
 </style>
 
 <html>
@@ -34,24 +47,136 @@ td {
 	<title>Test's Restaurant</title>
 	
 	<body>
-		<header style="font-family: 'MyWebFont', Fallback, sans-serif;">
-			<hr />
-			<h1>Test's Restaurant</h1>
-			<hr />
-		</header>
+		<div class="jumbotron" style="font-family: 'Roboto Condensed', sans-serif; text-align: center;">
+			<h1 class="display-3">Test's Restaurant</h1>
+			<p class="lead">Experimental American Fusion Cuisine</p>
+			<hr class="my-3">
+			<p>Now open in Minneapolis!</p>
+		</div>
 		
 		<nav>
-			<ul>
-				<li><a href="Main.html" title="Home">Home</a></li>
-				<li><a href="Menu.html" title="Menu">Menu</a></li>
-				<li><a href="Contact.html" title="Contact Us">Contact Us</a></li>
+			<ul class="nav nav-tabs">
+				<li class="nav-item"><a class="nav-link" href="Main.html" title="Home">Home</a></li>
+				<li class="nav-item"><a class="nav-link active" href="Menu.html" title="Menu">Menu</a></li>
+				<li class="nav-item"><a class="nav-link" href="Contact.html" title="Contact Us">Contact Us</a></li>
 			</ul>
 		</nav>
-			
-		<section>
-			<article>
-			
-				<table id="menu">
+
+				<div class="container">			
+					<div class="card-deck">
+						<div class="col" style="margin: 10px;">
+							<div class="card" style="width: 24rem;">
+								<img class="card-img-top" src="https://i2.wp.com/www.foodrepublic.com/wp-content/uploads/2012/03/burgerandfries.jpg?" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title">Burgers and Fries</h5>
+									<p class="card-text">
+										An American classic! <br />
+										Your choice - with or without cheese <br />
+										Pickle, onion, tomato, and lettuce <br />
+										Served with our famous thick-cut french fries <br />
+										<br />
+										9 <br />
+									</p>
+									<a href="#" class="btn btn-primary">Order now</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col" style=" margin: 10px;">
+							<div class="card" style="width: 24rem;">
+								<img class="card-img-top" src="https://cdn-images-1.medium.com/max/1600/1*-NDnNfxg7XlCdqT_IR7E7w.jpeg" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title">Hot Dog and Chips</h5>
+									<p class="card-text">
+										An American classic! <br />
+										Your choice - with or without cheese <br />
+										Pickle, onion, tomato, and lettuce <br />
+										Served with our famous thick-cut french fries <br />
+										<br />
+										9 <br />
+									</p>
+									<a href="#" class="btn btn-primary">Order now</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col" style=" margin: 10px;">
+							<div class="card" style="width: 24rem;">
+								<img class="card-img-top" src="https://images.cutco.com/learn/2018/slow-cooker-sausage-peppers-13-l.jpg" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title">Italian Sausage and Peppers</h5>
+									<p class="card-text">
+									An all-time favorite! <br />
+									Your choice - mild or spicy Cole Slaw <br />
+									Served with garlic mashers <br />
+									<br />
+									<br />
+									8
+									</p>
+									<a href="#" class="btn btn-primary">Order now</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col" style=" margin: 10px;">
+							<div class="card" style="width: 24rem;">
+								<img class="card-img-top" src="https://s3-media3.fl.yelpcdn.com/bphoto/STqOkdGn3uiswzad3TfHNw/o.jpg" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title">Tenderloin Sandwich and Chips</h5>
+									<p class="card-text">
+									Really hits the spot! <br />
+									Plain or sesame seed bun, pickle, onion, <br />
+									tomato, and lettuce <br />
+									Served with our house-made chips <br />
+									<br />
+									9 <br />
+									</p>
+									<a href="#" class="btn btn-primary">Order now</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col" style=" margin: 10px;">
+							<div class="card" style="width: 24rem;">
+								<img class="card-img-top" src="https://www.eriksdelicafe.com/wp-content/uploads/2018/03/eriks_deli-housesalad-zoom-e1519951853542.jpg" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title">House Salad</h5>
+									<p class="card-text">
+										On the lighter side! <br />
+										Your choice - with or without cheese <br />
+										Iceburg lettuce, tomatoes, peppers <br />
+										Thousand Island or Ranch dressing <br />
+										Served with a dinner roll <br />
+										<br />
+										7<br />									
+									</p>
+									<a href="#" class="btn btn-primary">Order now</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col" style=" margin: 10px;">
+							<div class="card" style="width: 24rem;">
+								<img class="card-img-top" src="https://199da4f2687b4e544d67-acbaddbbeef919e7671692497e171c6e.ssl.cf2.rackcdn.com/production/image/11928/listing_1006704945_BBQ04.JPG" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title">Brisket Sandwich and Fries</h5>
+									<p class="card-text">
+										Taste of the Lone Star! <br />
+										Smoked Brisket on thick-cut Texas Toast <br />
+										Your choice - mild or spicy Cole Slaw <br />
+										Served with our famous thick-cut french fries <br />
+										<br />
+										9 <br />
+									</p>
+									<a href="#" class="btn btn-primary">Order now</a>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<!-- <table id="menu">
 					<tr>
 						<td>
 							<p id="item">Burger and Fries</p>
@@ -127,14 +252,9 @@ td {
 						</td>
 					</tr>
 					
-				</table>
-
-			</article>
+				</table> -->
 			
-			<hr />
-			<hr />
-			
-			<article>
+<!-- 			<article>
 				<table id="menu">
 					<tr>
 						<td colspan="2" id="item">
@@ -260,12 +380,7 @@ td {
 					</tr>
 				</table>
 				
-			</article>
-			
-			<hr />
-			<hr />
-			
-		</section>
+			</article> -->
 		
 		<footer>
 			<hr />

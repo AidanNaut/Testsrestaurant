@@ -1,19 +1,11 @@
-@font-face {
-	font-family: 'MyWebFont';
-	src: url('myfont.woff2') format('woff2'),
-		 url('myfont.woff') format('woff');
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
-html {
-	background-color: gray;
-}
-
-header, footer, hr {
+/* header, footer, hr {
 	background-color: darkred;
 	color: white;
 	text-align: center;
 	border: 0;
-}
+} */
 
 
 /* one solution I tried to beautify my links.
@@ -38,9 +30,9 @@ header, footer, hr {
 https://stackoverflow.com/questions/556153/inline-elements-shifting-when-made-bold-on-hover
 I'm still not sure why it works... */
 
-nav {
+/* nav {
 	background-color: darkred;
-}
+} */
 
 ul {
 	padding: 10px;
